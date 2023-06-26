@@ -52,10 +52,10 @@ function MovieDetails() {
         <h4>Additional information</h4>
         <ul>
           <li>
-            <MovieDetailsLink to="cast">Cast</MovieDetailsLink>
+            <MovieDetailsLink to="cast" state={location.state}>Cast</MovieDetailsLink>
           </li>
           <li>
-            <MovieDetailsLink to="reviews">Reviews</MovieDetailsLink>
+            <MovieDetailsLink to="reviews" state={location.state}>Reviews</MovieDetailsLink>
           </li>
         </ul>
         <Suspense fallback={<div>Loading page...</div>}>
