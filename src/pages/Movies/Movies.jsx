@@ -26,7 +26,7 @@ function Movies() {
           {movies.results.map(result => {
             return (
               <MoviesTitle key={result.id}>
-                <MoviesItem to={`${result.id}`} state={location.state}>
+                <MoviesItem to={`${result.id}`} >
                   <p>{result.original_title}</p>
                 </MoviesItem>
               </MoviesTitle>
